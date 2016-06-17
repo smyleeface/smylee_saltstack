@@ -24,4 +24,3 @@ browser: `localhost:8080`
 ssh: `vagrant ssh server`
 
 run salt again: `sudo salt-call state.sls shiny-palm-tree`
-
