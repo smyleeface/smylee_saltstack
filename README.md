@@ -8,7 +8,7 @@ The following tools need to be installed on your local computer before running a
 * [VirtualBox/guest additions](https://www.virtualbox.org/wiki/Downloads)
 * CentOS Box - Before running any of the projects below, you will need to create a CentOS box. It will build an image and takes a little bit of time to build, but once it's built, you don't have to do it again.
 	1. `cd packer`
-	2. `packer build centos68-build.json`
+	2. `packer build centos68_build.json`
 	3. This will create a directory `build/centos-6.8-x86_64.box` within the packer directory approximately 260MB in size. All projects below will reference this box when running vagrant.
 
 ## Local Setup
@@ -19,7 +19,9 @@ Sample of a simple server setup with Vagrant and Packer. Also used for developme
 
 local: `vagrant up server`
 
+browser: `localhost:8080`
+
 ssh: `vagrant ssh server`
 
-run salt: `sudo salt-call state.sls shiny-palm-tree`
+run salt again: `sudo salt-call state.sls shiny-palm-tree`
 
